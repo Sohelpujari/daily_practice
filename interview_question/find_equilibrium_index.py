@@ -8,9 +8,10 @@ sum = sum(list)
 left_sum = 0
 for i in range(len(list)):
    right_sum = sum-left_sum-list[i]
-   print(f"right_sum: {right_sum}")
-   print(f"left_sum: {left_sum}")
+   # print(f"right_sum: {right_sum}")
+   # print(f"left_sum: {left_sum}")
    if right_sum == left_sum:
-       print(i)
+       print(f"Equilibrium index :{i}")
+       break
    left_sum += list[i]
 
